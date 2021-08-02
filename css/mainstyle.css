@@ -1,0 +1,143 @@
+body {
+    margin: auto;
+    width: 600px;
+    background-image: url('../images/img2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-top: 0;
+}
+
+footer {
+    border-top: #fff solid 1px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    clear: both;
+}
+
+.selection {
+    float: right;
+    width: 150px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.selection select {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #b3e5fc;
+
+}
+
+.text-container {
+    align-items: center;
+    border: cyan solid 3px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.text-container h2, h4 {
+    text-align: center;
+    font-style: oblique;
+    margin-top: 0;
+    color: gray;
+}
+
+.text-container p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.typing-field {
+    margin-bottom: 25px;
+}
+
+.typing-field span{
+    font-size: 25px;
+}
+#typing-field  {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    height: 50px;
+    border-radius: 7px;
+    text-align: center;
+    margin-right: 5%;
+    background-color: #b3e5fc;
+    font-weight: bold;
+}
+.timer  {
+    display: inline;
+    padding :10px;
+    font-size:45px;
+    position: relative;
+    left: 23%;
+    height: 30px;
+    border-radius: 7px;
+    color: cyan;
+
+}
+.result p {
+
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    padding: 5px;
+    border: cyan solid 2px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: black;
+}
+
+button{
+    clear:both;
+    margin-left: 38%;
+    width :25%;
+    font-size: 30px;
+    background-color:cyan;
+    color: #000;
+    border-radius: 7px;
+}
+button:hover{
+    background-color:#4dd0e1;
+}
+.important {
+    color: red;
+}
+.correct{
+    background-color:#eeeeee;
+    color:green;
+}
+
+.wrong{
+    background-color:#eeeeee;
+    color:red;
+}
+.wrong-space{
+    background-color:red;
+}
+
+.en{
+    display:block;
+}
+
+.sw{
+    display:none;
+}
+
+footer p a{
+	color: #fff;
+	
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type test</title>
+    <link rel="stylesheet" href="css/mainstyle.css">
+
+
+</head>
+
+<body onpageshow="change_article();">
+
+    <header>
+        <h1>Typeing Speed Test</h1>
+    </header>
+    <main>
+        <form action="index.html" method="">
+            <div class="selection">
+                <label for="list">choose text</label>
+                <br />
+                <select class="list" id="list" name="list" onchange="change_article()">
+                    <option class="en" value="1">Good Skill</option>
+                    <option class="en" value="2">Beer Yoga</option>
+                    <option class="en" value="3">Elephants or Avocados</option>
+                    <option class="sw" value="4">Bra skicklighet</option>
+                    <option class="sw" value="5">Beer Yoga</option>
+                    <option class="sw" value="6">Elefanter eller avokado</option>
+                </select>
+            </div>
+            <input type="checkbox" name="checkbox" id="box1" onchange="change_case_sensitivity()">
+            <label for="box1">Ignor Case</label>
+            <br /> <br />
+            select language then choose text<br /><br />
+            <input type="radio" name="radio" id="radio2" value="" checked>
+            <label for="radio2" onclick="to_english();">English</label>
+            <input type="radio" name="radio" id="radio1" value="">
+            <label for="radio1" onclick="to_swedish();">Swedish</label>
+            <div class="text-container">
+                <h2></h2>
+                <h4>(<span class="important" id="words_count"></span> words, <span class="important"
+                        id="chars_count"></span> cahracters)</h4>
+                <hr>
+                <p id="article"></p>
+            </div>
+            <div class="typing-field">
+                <input type="text" name="" value="" id="typing-field" placeholder="Start typing here . . ."
+                    oninput="start_timer();process_typed_char();">
+
+                <p id="timer" class="timer"> 00:60</p>
+            </div>
+
+
+        </form>
+        <div class="result">
+            <p>WPM&nbsp; <span class="important" id="wpm">00</span></p>
+            <p>Errors&nbsp; <span class="important" id="err">00</span></p>
+            <p>Accurecy&nbsp; <span class="important" id="acc">100%</span></p>
+        </div>
+        <button type="button" name="reset" onclick="reset_timer()">Try Again</button>
+    </main>
+    <footer>
+        <p>Made by <a href="mailto:Mahmoud5577@hotmail.com?subject=From Typing speed test">Mahmoud5577@hotmail.com</a>
+            😊🙏🏻</p>
+    </footer>
+    <script src="script/mainscript.js"></script>
+</body>
+
+</html>
