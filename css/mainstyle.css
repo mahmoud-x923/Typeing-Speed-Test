@@ -21,6 +21,9 @@ footer {
     clear: both;
 }
 
+form{
+    padding: 10px;
+}
 .selection {
     float: right;
     width: 150px;
